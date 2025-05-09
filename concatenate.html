@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concatenate Strings</title>
+</head>
+<body>
+  <h2>Concatenate Two Strings</h2>
+  <input type="text" id="str1" placeholder="Enter first string">
+  <input type="text" id="str2" placeholder="Enter second string">
+  <button onclick="concatenateStrings()">Concatenate</button>
+  <p id="result"></p>
+
+  <script>
+    function concatenateStrings() {
+      const s1 = document.getElementById("str1").value;
+      const s2 = document.getElementById("str2").value;
+      document.getElementById("result").innerText = "Result: " + s1 + s2;
+    }
+  </script>
+</body>
+</html>
